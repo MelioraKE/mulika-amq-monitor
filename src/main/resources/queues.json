@@ -1,0 +1,15 @@
+{
+  "url":  "service:jmx:rmi:///jndi/rmi://IP_ADDRESS:JMX_PORT/jmxrmi",
+  "configs": [
+    {
+      "name":"Loan-Request-Queue",
+      "object": "com.meliora.ucm.jmx:type=SystemCounters",
+      "attribute":"CMGMessageProduced"
+    },
+    {
+      "name":"Loan-Repayment-Queue",
+      "object": "com.meliora.ucm.jmx:type=SystemCounters",
+      "attribute":"CMGMessageProduced"
+    }
+  ]
+}
